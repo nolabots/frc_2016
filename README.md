@@ -5,7 +5,7 @@ NOLA Bots Rock!
 Team 5953
 
 Team Programmers:
-*Lane O'Bryant
+* Lane O'Bryant
 
 
 Programming Mentors:
