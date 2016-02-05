@@ -6,7 +6,7 @@ Team 5953
 
 Team Programmers:
 * Lane O'Bryant
-* Cy Salvant
+* Isaac Thaxton
 * Caleb Christopherson
 
 Programming Mentors:
