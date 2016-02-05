@@ -2,6 +2,9 @@
 package org.usfirst.frc.team5953.robot;
 
 import edu.wpi.first.wpilibj.IterativeRobot;
+import edu.wpi.first.wpilibj.Joystick;
+import edu.wpi.first.wpilibj.RobotDrive;
+import edu.wpi.first.wpilibj.Victor;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
@@ -25,6 +28,11 @@ public class Robot extends IterativeRobot {
     Command autonomousCommand;
     SendableChooser chooser;
 
+    RobotDrive myDrive;
+    Victor motorController1;
+    Victor motorController2;
+    Joystick joyStick;
+    
     /**
      * This function is run when the robot is first started up and should be
      * used for any initialization code.
@@ -35,6 +43,10 @@ public class Robot extends IterativeRobot {
         chooser.addDefault("Default Auto", new ExampleCommand());
 //        chooser.addObject("My Auto", new MyAutoCommand());
         SmartDashboard.putData("Auto mode", chooser);
+        motorController1 = new Victor(1);
+        motorController2 = new Victor(3);
+        myDrive = new RobotDrive(motorController1, motorController2);
+        joyStick = new Joystick(1); 
     }
 	
 	/**
