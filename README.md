@@ -12,3 +12,4 @@ Team Programmers:
 Programming Mentors:
 * Jesse Varnado (jesse.varnado@gmail.com)
 * Ryan Rockefeller (rrockefe@tulane.edu)
+* Scott Robertson (scott.peter.robertson@gmail.com)
